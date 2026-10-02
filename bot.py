@@ -32,6 +32,9 @@ TIMETABLE = {
         ("11:35", "CNS", "CNS"),
         ("12:30", "EVS", "EVS"),
     ],
+    "Friday": [
+        ("", "FRIDAY", "Holiday, no classes 🎉"),
+    ],
     "Saturday": [
         ("9:30", "PBL-MAD", "PBL-MAD"),
     ],
@@ -47,7 +50,8 @@ STICKERS = {
     "RM": "Idea sticker whatsapp 🫧🫧🫧.jpeg",
     "NEXTGEN": "25825397860260120.jpeg",
     "CGLAB": "pookie 🎀.jpeg",
-    "MLLAB": "accha bhosdi.jpeg",
+    "MLLAB": "accha bhosdi.jpeg",    
+    "FRIDAY": "stickers.jpeg",
 }
 
 now = datetime.now(ZoneInfo("Asia/Kolkata"))
