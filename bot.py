@@ -24,7 +24,7 @@ TIMETABLE = {
     "Wednesday": [
         ("9:30", "ML", "ML"),
         ("10:25", "FCG","FCG"),
-        ("11:35", "TOC","TOC")
+        ("11:35", "TOC","TOC"),
         ("1:25", "ML Lab", "ML Lab, Room 305 (till 3:10)"),
         ("3:10", "CNS", "CNS"),
     ],
