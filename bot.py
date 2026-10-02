@@ -65,13 +65,15 @@ embeds = []
 safe = {}  # real filename -> simple upload name
 
 for time, code, label in classes:
-    embed = {"title": f"{time}  {label}", "color": 0x5865F2}
+    embed = {"title": f"{time}  {label}".strip(), "color": 0x5865F2}
     filename = STICKERS.get(code)
     if filename and os.path.exists(os.path.join("stickers", filename)):
         if filename not in safe:
             ext = os.path.splitext(filename)[1]
             safe[filename] = f"sticker{len(safe)}{ext}"
         embed["thumbnail"] = {"url": f"attachment://{safe[filename]}"}
+    else:
+        print(f"NO STICKER for {code}: looked for {filename!r} in stickers/")
     embeds.append(embed)
 
 if not embeds:
